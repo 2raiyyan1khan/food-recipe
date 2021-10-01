@@ -43,9 +43,7 @@ function ui(items) {
           </h4>
            <div>
              <p>Diet Label : <span>${item.recipe.dietLabels}</span></p>
-             <p>Health Label : 
-             <span>${item.recipe.healthLabels.splice(0, 4)}</span>
-             </p>
+            
              <p>Calories : <span>${item.recipe.calories.toFixed(4)}</span></p>
            </div>
            <span class="cuisineType text-small">${
@@ -55,4 +53,9 @@ function ui(items) {
     `;
     main.appendChild(div);
   });
+}
+{
+  /* <p>Health Label : 
+            //  <span>${item.recipe.healthLabels.splice(0, 4)}</span>
+            //  </p> */
 }
