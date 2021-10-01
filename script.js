@@ -29,9 +29,8 @@ async function fetchRecipe(searchInput) {
 }
 
 function ui(items) {
-  console.log(items);
+  main.innerHTML = "";
   items.map((item) => {
-    console.log("i", item.recipe.label);
     let div = document.createElement("div");
     div.className = "card";
     div.innerHTML = `
@@ -53,9 +52,4 @@ function ui(items) {
     `;
     main.appendChild(div);
   });
-}
-{
-  /* <p>Health Label : 
-            //  <span>${item.recipe.healthLabels.splice(0, 4)}</span>
-            //  </p> */
 }
