@@ -151,6 +151,10 @@ img {
   main .card {
     grid-column: span 4;
   }
+  section {
+    width: 100%;
+    max-width: 1060px;
+  }
 }
 @media only screen and (min-width: 960px) {
   main .card {
